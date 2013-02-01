@@ -1,0 +1,61 @@
+<%= form_for(@medium, :html => {:multipart => true}) do |f| %>
+    <% if @medium.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@medium.errors.count, "error") %> prohibited this medium from being saved:</h2>
+
+            <ul>
+                <% @medium.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+        <%= f.label :type %>
+        <br/>
+        <%= f.text_field :type %>
+    </div>
+
+    <%= f.file_field :my_file %>
+
+    <!--<input id="fileupload" type="file" name="files[]" data-url="fileserver/php/" multiple>-->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <!--<script src="../javascripts/upload/jquery.ui.widget.js"></script>-->
+    <!--<script src="../javascripts/upload/jquery.iframe-transport.js"></script>-->
+    <!--<script src="../javascripts/upload/jquery.fileupload.js"></script>-->
+    <script>
+//        $(function () {
+//            $('#fileupload').fileupload({
+//                dataType: 'json',
+//                done: function (e, data) {
+//                    $.each(data.result.files, function (index, file) {
+//                        $('<p/>').text(file.name).appendTo(document.body);
+//                    });
+//                },
+//                progressall: function (e, data) {
+//                    var progress = parseInt(data.loaded / data.total * 100, 10);
+//                    $('#progress .bar').css(
+//                            'width',
+//                            progress + '%'
+//                    );
+//                }
+//            });
+//        });
+    </script>
+    <div id="progress">
+        <div class="bar" style="width: 0%; height: 18px; background: green;"></div>
+    </div>
+    <!--<div class="field">-->
+    <%#= f.label :url %><br />
+    <%#= f.text_field :url %>
+    <!--</div>-->
+    <div class="field">
+        <%= f.label :caption %>
+        <br/>
+        <%= f.text_field :caption %>
+    </div>
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+<% end %>
