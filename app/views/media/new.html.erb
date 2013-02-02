@@ -1,3 +1,104 @@
-<h1>New Media</h1>
-<%= render 'form' %>
-<%= link_to 'Back', media_path %>
+
+
+<%= form_for(@medium, :html => {:multipart => true}) do |f| %>
+    <% if @medium.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@medium.errors.count, "error") %> prohibited this medium from being saved:</h2>
+            <ul>
+                <% @medium.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+    <%= hidden_field_tag('medium[type]', 'image')%>
+    <%= hidden_field_tag('medium[project_id]', params[:project])%>
+    <div class="row">
+        <div class="span2">
+            <h2>Caption</h2>
+        </div>
+        <div class="span6 titleInputContainer">
+            <%= f.text_field :caption, :class => 'titleInput' %>
+        </div>
+    </div>
+<div class="row">
+    <div class="span2">
+        <h2>Type</h2>
+    </div>
+    <div class="span4" style="padding-top:15px">
+        <div class="btn-group" data-toggle="buttons-radio">
+            <button data-type="image" type="button" class="btn btn-primary" data-toggle="button">Image</button>
+            <button data-type="video" type="button" class="btn btn-primary" data-toggle="button">Video</button>
+        </div>
+    </div>
+</div>
+    <div class="row" id="imageUpload"  style="display:none;">
+        <div class="span2">
+            <h3>Upload:</h3>
+        </div>
+        <div class="span5 formImageUpload">
+            <input id="fileupload" type="file" name="my_file" data-url="/media" />
+            <%#= f.file_field :my_file %>
+        </div>
+    </div>
+    <div class="row" id="videoUpload" style="display:none;">
+        <div class="span2">
+            <h3>vimeo url:</h3>
+        </div>
+        <div class="span6 titleInputContainer">
+            <input class="titleInput" id="medium_url" name="medium[url]" size="30" type="text">
+        </div>
+    </div>
+    <!--<div class="hero-unit" id="hero-container">-->
+        <!--<h1>Preview</h1>-->
+    <!--</div>-->
+
+    <div class="row" style="margin-top:20px">
+        <div class="span2">
+            <%= f.submit "Add Media", :class => "btn btn-primary"%>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+        var children = $('div.btn-group')[0].children;
+        for(var i = 0; i < children.length; i++ ) {
+            $(children[i]).click(function(){
+                $('#medium_type').val( $(this).data('type') );
+                $('#'+ $(this).data('type') + 'Upload').show();
+                $('#'+ $(this.other).data('type') + 'Upload').hide();
+                console.log(this.other, this)
+            });
+
+            children[i].other = (i == 0) ? children[1] : children[0];
+        }
+
+        $('#new_medium').submit(function( event ){
+            event.preventDefault();
+            var serializedArray = $('#new_medium').serializeArray();
+            var formData = new FormData();
+            for(var i = 0; i < serializedArray.length; i++) {
+                formData.append(serializedArray[i].name, serializedArray[i].value);
+            }
+            formData.append("my_file", document.getElementById('fileupload').files[0]);
+
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function() {
+                if (req.readyState === 4){
+                    // Refresh if in iframe
+                    if( parent != window ) {
+                        parent.location.reload();
+                    }
+                }
+            };
+            req.open("POST", "/media");
+            req.send(formData);
+        });
+    }, false);
+</script>
+
+    <script src="/javascripts/upload/jquery.ui.widget.js"></script>
+    <script src="/javascripts/upload/jquery.iframe-transport.js"></script>
+    <script src="/javascripts/upload/jquery.fileupload.js"></script>
+<% end %>
+

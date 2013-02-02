@@ -38,5 +38,24 @@ module Lukasandreas
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    #<link href="/stylesheets/bootstrap.css" rel="stylesheet">
+    #<link rel="stylesheet/less" type="text/css" href="../stylesheets/styles.less" />
+    #<script src="/javascripts/thirdparty/less-1.3.3.min.js" type="text/javascript"></script>
+    #
+    #<script src="/javascripts/thirdparty/jquery-latest.js"></script>
+    config.action_view.javascript_expansions[:defaults] = ['thirdparty/jquery-latest.js',
+                                                           'thirdparty/bootstrap/bootstrap-transition.js',
+                                                           'thirdparty/bootstrap/bootstrap-alert.js',
+                                                           'thirdparty/bootstrap/bootstrap-modal.js',
+                                                           'thirdparty/bootstrap/bootstrap-dropdown.js',
+                                                           'thirdparty/bootstrap/bootstrap-scrollspy.js',
+                                                           'thirdparty/bootstrap/bootstrap-tab.js',
+                                                           'thirdparty/bootstrap/bootstrap-tooltip.js',
+                                                           'thirdparty/bootstrap/bootstrap-popover.js',
+                                                           'thirdparty/bootstrap/bootstrap-button.js',
+                                                           'thirdparty/bootstrap/bootstrap-collapse.js',
+                                                           'thirdparty/bootstrap/bootstrap-carousel.js',
+                                                           'thirdparty/bootstrap/bootstrap-typeahead.js'];
   end
 end

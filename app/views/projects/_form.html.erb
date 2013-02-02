@@ -11,15 +11,49 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :footer %><br />
-    <%= f.text_field :footer %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <div class="row">
+        <div class="span2">
+            <h2><%= f.label :name %></h2>
+        </div>
+        <div class="span6 titleInputContainer">
+            <%= f.text_field :name, :class => 'titleInput' %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span2">
+            <h2><%= f.label :footer %></h2>
+        </div>
+        <div class="span6 titleInputContainer">
+            <%= f.text_field :footer, :class => 'titleInput' %>
+        </div>
+    </div>
+    <div id="newMedia">
+        <button id="addMedia" type="button" class="btn btn-primary">Add Media</button>
+        <div id="newMediaHeader" style="display:none;">
+            <h3 style="color:#ff0000;">Media Details</h3>
+        </div>
+    </div>
+    <div class="row" style="margin-top:20px">
+        <div class="span2">
+            <%= f.submit "Save", :id => "save", :class => "btn btn-primary"%>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function(){
+            $($('#addMedia')[0]).click(function() {
+                var container = document.getElementById('newMedia');
+                var iframe  = document.createElement("IFRAME");
+                iframe.src = "/media/new?id=<%= @project.id %>";
+                iframe.style.border = "none";
+                container.style.width = iframe.style.width = "980px";
+                container.style.height = iframe.style.height = "730px";
+                container.appendChild(iframe);
+
+                $(this).remove();
+                $("#save").remove();
+                $("#newMediaHeader").show();
+            });
+        }, false);
+    </script>
 <% end %>
+

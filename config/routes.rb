@@ -1,5 +1,6 @@
 Lukasandreas::Application.routes.draw do
   resources :media
+  match "media/new/:id" => "media#new";
 
   resources :projects
 
