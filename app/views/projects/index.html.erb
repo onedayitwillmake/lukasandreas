@@ -1,3 +1,4 @@
+<% require 'net/http' %>
 <link rel="stylesheet/less" type="text/css" href="/stylesheets/main.less" />
 </head>
 <body>
@@ -9,32 +10,59 @@
         <div class="page-header">
             <ul class="nav nav-pills">
                 <% @projects.each do |project| %>
-                    <li class="active"><a href="#"><%= project.name %></a></li>
+                    <li class="active"><a class="projectNavLink" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_link" href="#"><%= project.name %></a></li>
                 <% end %>
             </ul>
         </div>
+        <div class="container">
         <% @projects.each do |project| %>
-            <div class="container">
-                <h1><%= project.name %></h1>
-            </div>
+             <h1><%= project.name %></h1>
             <% allMedia= Medium.find_all_by_project_id(project.id) %>
             <% allMedia.each do |media| %>
-                <div class="mediaContainer">
+                <div class="mediaContainer row span9" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_content">
                     <% if media.category == "image" %>
                         <img src="/<%= media.url %>" />
                     <% else %>
+                        <%
+                           urlString = "http://vimeo.com/api/oembed.json?url=" << media.url << "&width=700"
+                           url = URI.parse(urlString)
+                           req = Net::HTTP::Get.new(urlString)
+                           res = Net::HTTP.start(url.host, url.port) {|http|
+                             http.request(req)
+                           }
+                           #puts url.url
+                           json = ActiveSupport::JSON.decode(res.body)
+                        %>
+                        <%= raw(json['html']) %>
+                    <% end %>
+                    <% unless media.caption.empty? %>
+                        <div class="mediaCaption row span9">
+                            <%= media.caption %>
+                        </div>
                     <% end %>
                 </div>
             <% end %>
         <% end %>
-
+        </div>
     </div>
     <div id="push"></div>
 </div>
-
 <div id="footer">
     <div class="container">
         <p class="muted credit">&copy; Lukas Lund & Andreas Hoff 2012.</p>
     </div>
 </div>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+        console.log( $('.projectNavLink') );
+        $('.projectNavLink').click(function(e) {
+            var navLink = e.originalEvent.currentTarget;
+            var contentId = navLink.id.split("_")[0] + "_content";
+            var contentDiv = $('#' + contentId )[0];
+            $('html, body').animate({
+                scrollTop: contentDiv.offsetTop - 70
+            }, 500);
+        });
+    }, false);
+</script>
 

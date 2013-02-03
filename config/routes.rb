@@ -2,7 +2,7 @@ Lukasandreas::Application.routes.draw do
   resources :media
   match "media/new/:id" => "media#new";
   match "projects/admin" => "projects#admin";
-
+  match "projects/admin/destroy:id" => "projects#destroy";
   resources :projects
 
   # The priority is based upon order of creation:

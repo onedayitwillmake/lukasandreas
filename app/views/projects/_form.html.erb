@@ -44,7 +44,7 @@
                 images.push({url:'<%= media.url %>', category:'<%= media.category %>'});
             <% end %>
             for(var i = 0; i < images.length; ++i){
-                var htmlString = LA.processURL( images[i].url, images[i].category, document.getElementById('mediaContainer') );
+                var htmlString = LA.processURL( images[i].url, images[i].category, document.getElementById('mediaContainer'), 150 );
                 console.log(images[i])
             }
         </script>

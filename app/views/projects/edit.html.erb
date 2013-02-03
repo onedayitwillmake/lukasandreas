@@ -7,12 +7,9 @@
     <div class="container">
         <div class="page-header">
             <h1>Editing project</h1>
+            <%= link_to "Back", :controller => "projects", :action => "admin" %>
         </div>
-
         <%= render 'form' %>
-
-        <%= link_to 'Show', @project %> |
-        <%= link_to 'Back', projects_path %>
     </div>
 </div>
 <div id="footer">

@@ -11,22 +11,15 @@
             <b>Name:</b>
             <%= @project.name %>
         </p>
-
         <p>
             <b>Footer:</b>
             <%= @project.footer %>
         </p>
-
-
-        <%= link_to 'Edit', edit_project_path(@project) %> |
-        <%= link_to 'Back', projects_path %>
+        <%= link_to "Ok great! - Take Me Back", :controller => "projects", :action => "admin" %>
 
     </div>
 </div>
 <div id="footer">
-    <div class="container">
-        <p>&copy; LukasAndreas 2012</p>
-    </div>
 </div>
 </body>
 </html>
