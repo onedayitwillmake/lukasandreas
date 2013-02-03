@@ -1,0 +1,39 @@
+<link rel="stylesheet/less" type="text/css" href="/stylesheets/styles.less" />
+</head>
+<body>
+<!-- Part 1: Wrap all page content here -->
+<div id="wrap">
+    <!-- Begin page content -->
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Projects</h1>
+            <ul class="nav nav-pills">
+                    <li class="active"><%= link_to 'New Project', new_project_path %></a></li>
+            </ul>
+        </div>
+        <% @projects.each do |project| %>
+            <div class="row">
+                <div class="span6 titleInputContainer">
+                    <h3><%= project.name %></h3>
+                </div>
+                <%#= link_to 'Show', project %>
+                <div class="span1">
+                    <%= link_to 'Edit', edit_project_path(project) %>
+                </div>
+                <div class="span1">
+                    <%= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete %>
+                </div>
+            </div>
+        <% end %>
+        <br />
+
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <p>&copy; LukasAndreas 2012</p>
+    </div>
+</div>
+</body>
+</html>

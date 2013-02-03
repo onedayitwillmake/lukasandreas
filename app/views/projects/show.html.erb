@@ -1,15 +1,32 @@
-<p id="notice"><%= notice %></p>
+<link rel="stylesheet/less" type="text/css" href="/stylesheets/styles.less" />
+</head>
+<body>
+<!-- Part 1: Wrap all page content here -->
+<div id="wrap">
+    <!-- Begin page content -->
+    <div class="container">
+        <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @project.name %>
-</p>
+        <p>
+            <b>Name:</b>
+            <%= @project.name %>
+        </p>
 
-<p>
-  <b>Footer:</b>
-  <%= @project.footer %>
-</p>
+        <p>
+            <b>Footer:</b>
+            <%= @project.footer %>
+        </p>
 
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+        <%= link_to 'Edit', edit_project_path(@project) %> |
+        <%= link_to 'Back', projects_path %>
+
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <p>&copy; LukasAndreas 2012</p>
+    </div>
+</div>
+</body>
+</html>

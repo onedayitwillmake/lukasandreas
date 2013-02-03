@@ -11,7 +11,7 @@
             </ul>
         </div>
     <% end %>
-    <%= hidden_field_tag('medium[type]', 'image')%>
+    <%= hidden_field_tag('medium[category]', 'image')%>
     <%= hidden_field_tag('medium[project_id]', params[:project])%>
     <div class="row">
         <div class="span2">
@@ -64,10 +64,13 @@
         var children = $('div.btn-group')[0].children;
         for(var i = 0; i < children.length; i++ ) {
             $(children[i]).click(function(){
-                $('#medium_type').val( $(this).data('type') );
+
+                // Update the hidden form field
+                $('#medium_category').val( $(this).data('type') );
+
+                // Show/hide the image/video add buttons
                 $('#'+ $(this).data('type') + 'Upload').show();
                 $('#'+ $(this.other).data('type') + 'Upload').hide();
-                console.log(this.other, this)
             });
 
             children[i].other = (i == 0) ? children[1] : children[0];

@@ -28,10 +28,26 @@
         </div>
     </div>
     <div id="newMedia">
-        <button id="addMedia" type="button" class="btn btn-primary">Add Media</button>
+        <% unless @project.id.nil? %>
+            <button id="addMedia" type="button" class="btn btn-primary">Add Media</button>
+        <% end %>
         <div id="newMediaHeader" style="display:none;">
             <h3 style="color:#ff0000;">Media Details</h3>
         </div>
+    </div>
+    <div id="mediaContainer">
+        <script type="text/javascript">
+            var images = [];
+
+            <% @allMedia= Medium.find_all_by_project_id(@project.id) %>
+            <% @allMedia.each do |media| %>
+                images.push({url:'<%= media.url %>', category:'<%= media.category %>'});
+            <% end %>
+            for(var i = 0; i < images.length; ++i){
+                var htmlString = LA.processURL( images[i].url, images[i].category, document.getElementById('mediaContainer') );
+                console.log(images[i])
+            }
+        </script>
     </div>
     <div class="row" style="margin-top:20px">
         <div class="span2">
@@ -43,7 +59,7 @@
             $($('#addMedia')[0]).click(function() {
                 var container = document.getElementById('newMedia');
                 var iframe  = document.createElement("IFRAME");
-                iframe.src = "/media/new?id=<%= @project.id %>";
+                iframe.src = "/media/new?project=<%= @project.id %>";
                 iframe.style.border = "none";
                 container.style.width = iframe.style.width = "980px";
                 container.style.height = iframe.style.height = "730px";

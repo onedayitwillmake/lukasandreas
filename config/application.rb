@@ -56,6 +56,8 @@ module Lukasandreas
                                                            'thirdparty/bootstrap/bootstrap-button.js',
                                                            'thirdparty/bootstrap/bootstrap-collapse.js',
                                                            'thirdparty/bootstrap/bootstrap-carousel.js',
-                                                           'thirdparty/bootstrap/bootstrap-typeahead.js'];
+                                                           'thirdparty/bootstrap/bootstrap-typeahead.js',
+                                                           'App.js'
+    ];
   end
 end

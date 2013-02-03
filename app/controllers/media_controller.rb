@@ -44,7 +44,7 @@ class MediaController < ApplicationController
   def create
 
     # If it's an image place it into the content directory and create a new url
-    if( params[:medium][:type] == "image")
+    if( params[:medium][:category] == "image")
       tmp = params[:my_file];
       directory = 'content'
       newFileName = String(Time.now.to_i) + File.extname(tmp.original_filename);
@@ -54,10 +54,10 @@ class MediaController < ApplicationController
       }
       # Remove the attribute from params and set the url
       params[:medium].delete('my_file');
-      params[:medium][:url] = 'public' +"/" + directory + "/" + newFileName;
+      params[:medium][:url] = directory + "/" + newFileName;
     end
 
-    @medium = Medium.new(params[:medium])
+    @medium = Medium.new( params[:medium])
 
     respond_to do |format|
       if @medium.save

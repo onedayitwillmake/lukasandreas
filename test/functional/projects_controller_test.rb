@@ -6,7 +6,7 @@ class ProjectsControllerTest < ActionController::TestCase
   end
 
   test "should get index" do
-    get :index
+    get :admin
     assert_response :success
     assert_not_nil assigns(:projects)
   end

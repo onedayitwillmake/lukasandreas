@@ -1,24 +1,40 @@
-<div class="page-header">
-    <h1>Projects</h1>
-    <%= link_to 'New Project', new_project_path %>
-</div>
-<% @projects.each do |project| %>
-        <div class="row">
-            <div class="span2">
-                <h3>Project</h3>
-            </div>
-            <div class="span6 titleInputContainer">
-                <h3><%= project.name %></h3>
-            </div>
-            <%#= link_to 'Show', project %>
-            <div class="span1">
-                <%= link_to 'Edit', edit_project_path(project) %>
-            </div>
-                <div class="span1">
-                <%= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete %>
-                </div>
-        </div>
-    <%= project.footer %>
+<link rel="stylesheet/less" type="text/css" href="/stylesheets/main.less" />
+</head>
+<body>
+<!-- Part 1: Wrap all page content here -->
+<div id="wrap">
 
-<% end %>
-<br />
+    <!-- Begin page content -->
+    <div class="container">
+        <div class="page-header">
+            <ul class="nav nav-pills">
+                <% @projects.each do |project| %>
+                    <li class="active"><a href="#"><%= project.name %></a></li>
+                <% end %>
+            </ul>
+        </div>
+        <% @projects.each do |project| %>
+            <div class="container">
+                <h1><%= project.name %></h1>
+            </div>
+            <% allMedia= Medium.find_all_by_project_id(project.id) %>
+            <% allMedia.each do |media| %>
+                <div class="mediaContainer">
+                    <% if media.category == "image" %>
+                        <img src="/<%= media.url %>" />
+                    <% else %>
+                    <% end %>
+                </div>
+            <% end %>
+        <% end %>
+
+    </div>
+    <div id="push"></div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="muted credit">&copy; Lukas Lund & Andreas Hoff 2012.</p>
+    </div>
+</div>
+
