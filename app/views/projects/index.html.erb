@@ -2,24 +2,45 @@
 <link rel="stylesheet/less" type="text/css" href="/stylesheets/main.less" />
 </head>
 <body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner lukasAndreasNav" style="background: whitesmoke;border-color: rgb(245, 245, 245);">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <% @projects.each do |project| %>
+                        <li><a class="projectNavLink" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_link" href="#"><%= project.name %></a></li>
+                    <% end %>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
 <!-- Part 1: Wrap all page content here -->
 <div id="wrap">
+    <div id="header">
+        <div class="container">
+            <ul class="nav nav-pills">
 
+            </ul>
+        </div>
+    </div>
     <!-- Begin page content -->
     <div class="container">
         <div class="page-header">
-            <ul class="nav nav-pills">
-                <% @projects.each do |project| %>
-                    <li class="active"><a class="projectNavLink" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_link" href="#"><%= project.name %></a></li>
-                <% end %>
-            </ul>
         </div>
         <div class="container">
         <% @projects.each do |project| %>
-             <h1><%= project.name %></h1>
+                <div class="mediaContainer row span9" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_content">
+                    <h1><%= project.name %></h1>
+                </div>
             <% allMedia= Medium.find_all_by_project_id(project.id) %>
             <% allMedia.each do |media| %>
-                <div class="mediaContainer row span9" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_content">
+                <div class="mediaContainer row span9">
                     <% if media.category == "image" %>
                         <img src="/<%= media.url %>" />
                     <% else %>
@@ -60,7 +81,7 @@
             var contentId = navLink.id.split("_")[0] + "_content";
             var contentDiv = $('#' + contentId )[0];
             $('html, body').animate({
-                scrollTop: contentDiv.offsetTop - 70
+                    scrollTop: contentDiv.offsetTop - 40
             }, 500);
         });
     }, false);
