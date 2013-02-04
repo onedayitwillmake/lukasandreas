@@ -3,7 +3,7 @@
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top navHeader">
-    <div class="navbar-inner lukasAndreasNav" style="background: whitesmoke;border-color: rgb(245, 245, 245);">
+    <div class="navbar-inner lukasAndreasNav" style="background: white;border: none; box-shadow: none;">
         <div class="container">
             <div class="nav-collapse collapse">
                 <ul class="nav">
@@ -25,7 +25,6 @@
         <div class="container">
         <% @projects.each do |project| %>
                 <div class="mediaContainer row span9" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_content">
-                    <h1><%= project.name %></h1>
                 </div>
             <% allMedia= Medium.find_all_by_project_id(project.id) %>
             <% allMedia.each do |media| %>
@@ -105,18 +104,12 @@
             var contentId = navLink.id.split("_")[0] + "_content";
             var contentDiv = $('#' + contentId )[0];
             var tween = new TWEEN.Tween( { y: window.scrollY } )
-                    .to( { y: contentDiv.offsetTop - 40 }, 1000 )
+                    .to( { y: contentDiv.offsetTop - 60 }, 1000 )
                     .easing( TWEEN.Easing.Quadratic.InOut )
                     .onUpdate( function () {
-                        console.log("a")
                         window.scrollTo( 0, Math.round(this.y) )
                     } )
                     .start();
-//            $('html, body').animate({
-//                    scrollTop: contentDiv.offsetTop - 40
-//            }, 500);
-
-
 
         });
     }, false);
