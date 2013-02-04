@@ -57,6 +57,7 @@ module Lukasandreas
                                                            'thirdparty/bootstrap/bootstrap-collapse.js',
                                                            'thirdparty/bootstrap/bootstrap-carousel.js',
                                                            'thirdparty/bootstrap/bootstrap-typeahead.js',
+                                                           'thirdparty/tween.js',
                                                            'App.js'
     ];
   end

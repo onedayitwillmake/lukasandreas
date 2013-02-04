@@ -2,18 +2,13 @@
 <link rel="stylesheet/less" type="text/css" href="/stylesheets/main.less" />
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top navHeader">
     <div class="navbar-inner lukasAndreasNav" style="background: whitesmoke;border-color: rgb(245, 245, 245);">
         <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <% @projects.each do |project| %>
-                        <li><a class="projectNavLink" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_link" href="#"><%= project.name %></a></li>
+                        <li><a class="projectNavLink" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_link" href=""><%= project.name %></a></li>
                     <% end %>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -22,16 +17,10 @@
 </div>
 <!-- Part 1: Wrap all page content here -->
 <div id="wrap">
-    <div id="header">
-        <div class="container">
-            <ul class="nav nav-pills">
-
-            </ul>
-        </div>
-    </div>
     <!-- Begin page content -->
     <div class="container">
-        <div class="page-header">
+        <div class="span9">
+            <img src="/images/hero.jpg" />
         </div>
         <div class="container">
         <% @projects.each do |project| %>
@@ -74,16 +63,64 @@
     </div>
 </div>
 <script type="text/javascript">
+    (function() {
+        var lastTime = 0;
+        var vendors = ['ms', 'moz', 'webkit', 'o'];
+        for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+            window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+            window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
+                    || window[vendors[x]+'CancelRequestAnimationFrame'];
+        }
+
+        if (!window.requestAnimationFrame)
+            window.requestAnimationFrame = function(callback, element) {
+                var currTime = new Date().getTime();
+                var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+                        timeToCall);
+                lastTime = currTime + timeToCall;
+                return id;
+            };
+
+        if (!window.cancelAnimationFrame)
+            window.cancelAnimationFrame = function(id) {
+                clearTimeout(id);
+            };
+    }());
+
+    function animate() {
+        requestAnimationFrame( animate ); // js/RequestAnimationFrame.js needs to be included too.
+        TWEEN.update();
+    }
+    animate();
+
     document.addEventListener('DOMContentLoaded', function(){
         console.log( $('.projectNavLink') );
         $('.projectNavLink').click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+
             var navLink = e.originalEvent.currentTarget;
             var contentId = navLink.id.split("_")[0] + "_content";
             var contentDiv = $('#' + contentId )[0];
-            $('html, body').animate({
-                    scrollTop: contentDiv.offsetTop - 40
-            }, 500);
+            var tween = new TWEEN.Tween( { y: window.scrollY } )
+                    .to( { y: contentDiv.offsetTop - 40 }, 1000 )
+                    .easing( TWEEN.Easing.Quadratic.InOut )
+                    .onUpdate( function () {
+                        console.log("a")
+                        window.scrollTo( 0, Math.round(this.y) )
+                    } )
+                    .start();
+//            $('html, body').animate({
+//                    scrollTop: contentDiv.offsetTop - 40
+//            }, 500);
+
+
+
         });
     }, false);
+
+
 </script>
 

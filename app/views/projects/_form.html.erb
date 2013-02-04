@@ -27,7 +27,7 @@
             <%= f.text_field :footer, :class => 'titleInput' %>
         </div>
     </div>
-    <div id="newMedia">
+    <div id="newMedia" class="row" style="margin-bottom: 10px;">
         <% unless @project.id.nil? %>
             <button id="addMedia" type="button" class="btn btn-primary">Add Media</button>
         <% end %>
@@ -35,19 +35,27 @@
             <h3 style="color:#ff0000;">Media Details</h3>
         </div>
     </div>
-    <div id="mediaContainer">
-        <script type="text/javascript">
-            var images = [];
-
-            <% @allMedia= Medium.find_all_by_project_id(@project.id) %>
-            <% @allMedia.each do |media| %>
-                images.push({url:'<%= media.url %>', category:'<%= media.category %>'});
-            <% end %>
-            for(var i = 0; i < images.length; ++i){
-                var htmlString = LA.processURL( images[i].url, images[i].category, document.getElementById('mediaContainer'), 150 );
-                console.log(images[i])
-            }
-        </script>
+    <div id="mediaContainer" class="row">
+        <% allMedia= Medium.find_all_by_project_id(@project.id) %>
+        <% allMedia.each do |media| %>
+            <div class="form_mediaContainer span2">
+                <% if media.category == "image" %>
+                    <img src="/<%= media.url %>" width="100px" />
+                <% else %>
+                    <%
+                       urlString = "http://vimeo.com/api/oembed.json?url=" << media.url << "&width=700"
+                       url = URI.parse(urlString)
+                       req = Net::HTTP::Get.new(urlString)
+                       res = Net::HTTP.start(url.host, url.port) {|http|
+                         http.request(req)
+                       }
+                       #puts url.url
+                       json = ActiveSupport::JSON.decode(res.body)
+                    %>
+                    <%= raw(json['html']) %>
+                <% end %>
+            </div>
+        <% end %>
     </div>
     <div class="row" style="margin-top:20px">
         <div class="span2">
