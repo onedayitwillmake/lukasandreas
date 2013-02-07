@@ -44,7 +44,7 @@
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.0.9, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.0.3, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rbx-require-relative (v0.0.9, ruby-1.8.7-p358) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12, ruby-1.8.7-p358) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.1, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-debug (v0.10.4, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-debug-base (v0.10.4, ruby-1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.14.6, ruby-1.8.7-p358) [gem]" level="application" />
