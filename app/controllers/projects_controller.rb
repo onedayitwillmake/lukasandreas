@@ -1,8 +1,11 @@
 class ProjectsController < ApplicationController
+  before_filter :authenticate
+  skip_before_filter :authenticate, :only => [:index, :destroy]
+
   # GET /roots
   # GET /projects.xml
   def index
-    @projects = Project.all
+    @projects = Project.all(:order => :rank)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,11 +16,24 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def admin
-    @projects = Project.all
+    @projects = Project.all(:order => :rank)
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @projects }
+    end
+  end
+
+  def updateRanks
+    @allProjects = Project.all;
+
+    @allProjects.each { |project|
+      project.rank = params[ project.id.to_s() ].to_i();
+      project.save;
+    }
+
+    respond_to do |format|
+      format.html  { render :xml => @allProjects, :status => :created}
     end
   end
 
@@ -84,6 +100,7 @@ class ProjectsController < ApplicationController
   # DELETE /projects/1.xml
   def destroy
     @project = Project.find(params[:id])
+    Medium.delete_all(:project_id => @project.id);
     @project.destroy
 
     respond_to do |format|

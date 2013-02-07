@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+    <%= hidden_field_tag('project_id', @project.id)%>
     <div class="row">
         <div class="span2">
             <h2><%= f.label :name %></h2>
@@ -36,9 +36,9 @@
         </div>
     </div>
     <div id="mediaContainer" class="row">
-        <% allMedia= Medium.find_all_by_project_id(@project.id) %>
+        <% allMedia= Medium.find_all_by_project_id(@project.id, :order => :rank) %>
         <% allMedia.each do |media| %>
-            <div class="form_mediaContainer span2">
+            <div class="form_mediaContainer span3" id="<%=media.id%>_container">
                 <% if media.category == "image" %>
                     <img src="/<%= media.url %>" width="100px" />
                 <% else %>
@@ -54,12 +54,17 @@
                     %>
                     <%= raw(json['html']) %>
                 <% end %>
+                <a class="btn btn-danger" id="<%=media.id%>_delete" href="#" style="padding:1px 1px; vertical-align: top;"><i class="icon-trash icon-large"></i></a>
+                <input id="<%=media.id%>_rank" type="text" placeholder="<%= media.rank %>" style="width:20px; text-align:center; vertical-align: top;"></input>
             </div>
         <% end %>
     </div>
     <div class="row" style="margin-top:20px">
         <div class="span2">
-            <%= f.submit "Save", :id => "save", :class => "btn btn-primary"%>
+            <button id="updateMedia" type="button" class="btn btn-warning" style="width:150px">Save Media Order</button>
+        </div>
+        <div class="span1">
+        <%= f.submit "Save Info", :id => "save", :class => "btn btn-info"%>
         </div>
     </div>
     <script type="text/javascript">
@@ -78,6 +83,51 @@
                 $("#newMediaHeader").show();
             });
         }, false);
+
+        /*
+         var confirm = window.confirm("Will erase previous data\nAre you sure?");
+         if (!confirm) {
+            return;
+         }
+         */
+        $(".icon-trash").click(function( event ){
+            var confirm = window.confirm("About to destroy this media object!\nAre you sure?");
+            if (!confirm) {
+                return;
+            }
+
+            var formData = new FormData();
+            formData.append("_method", "delete");
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function( e ) {
+                if (req.readyState === 4){
+                    // Refresh if in iframe
+                    parent.location.reload();
+                }
+            };
+            req.open("POST", "/media/" + this.parentNode.id.split("_")[0] + ".xml");
+            req.send(formData);
+        })
+        $('#updateMedia').click(function( event ){
+            event.preventDefault();
+
+            var formData = new FormData();
+            formData.append("project_id", $("#project_id")[0].value);
+            $(".form_mediaContainer").each(function(index, element){
+                var nameParts = element.id.split("_container");
+                var rankElement = $("#" + nameParts[0] + "_rank");
+                formData.append(nameParts[0], rankElement[0].value || rankElement[0].placeholder);
+            });
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function( e ) {
+                if (req.readyState === 4){
+                    // Refresh if in iframe
+                    parent.location.reload();
+                }
+            };
+            req.open("POST", "/media/update-ranks");
+            req.send(formData);
+        });
     </script>
 <% end %>
 

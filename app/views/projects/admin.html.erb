@@ -9,25 +9,35 @@
         <div class="page-header">
             <h1>Projects</h1>
             <ul class="nav nav-pills">
-                    <li class="active"><%= link_to 'New Project', new_project_path %></a></li>
+                <li class="active" id="updateRanks" style="padding-right:10px"><a href="#" style="background-color:rgb(21, 207, 13)">Save Project Order</a></li>
+                <li class="active"></li>
+                <li class="active"><%= link_to 'New Project', new_project_path %></li>
             </ul>
         </div>
-        <% @projects.each do |project| %>
-            <div class="row">
-                <div class="span6 titleInputContainer">
-                    <h3><%= project.name %></h3>
-                </div>
-                <%#= link_to 'Show', project %>
-                <div class="span1">
-                    <%= link_to 'Edit', edit_project_path(project) %>
-                </div>
-                <div class="span1">
-                    <%= link_to "Destroy", :controller => "projects", :action => "destroy", :id => project %>
-                </div>
-            </div>
-        <% end %>
-        <br />
+        <form accept-charset="UTF-8" action="/projects/update-ranks" class="" id="update_form" method="post">
+            <% @projects.each do |project| %>
+                <div id="<%= project.id %>_container" class="row project">
+                    <div class="span0" style="padding-top:14px">
+                        <input id="<%=project.id%>_rank" type="text" placeholder="<%= project.rank %>" style="width:20px; text-align:center; vertical-align: top;"></input>
 
+                    </div>
+                    <div class="span8 titleInputContainer">
+                        <h3><%= project.name %></h3>
+                    </div>
+                    <%#= link_to 'Show', project %>
+                    <div class="span0" style="padding-top:14px">
+                        <a class="btn btn-primary" id="" href="/projects/<%= project.id %>/edit" style="padding:4px 4px; vertical-align: top;"><i class="icon-edit icon-large"></i></a>
+                        <a class="btn btn-danger" id="<%=project.id%>_delete" href="#" style="padding:4px 4px; vertical-align: top;"><i class="icon-trash icon-large"></i></a>
+                    </div>
+                </div>
+            <% end %>
+            <br>
+
+            <br />
+            <br />
+            <br />
+            <br />
+        </form>
     </div>
 </div>
 <div id="footer">
@@ -36,4 +46,46 @@
     </div>
 </div>
 </body>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(){
+
+    $(".icon-trash").click(function( event ){
+        var confirm = window.confirm("About to destroy this project!\nAre you sure?");
+        if (!confirm) {
+            return;
+        }
+        var formData = new FormData();
+        formData.append("_method", "delete");
+        var req = new XMLHttpRequest();
+        req.onreadystatechange = function( e ) {
+            if (req.readyState === 4){
+                // Refresh if in iframe
+                parent.location.reload();
+            }
+        };
+        req.open("POST", "/projects/" + this.parentNode.id.split("_")[0] + ".xml");
+        req.send(formData);
+    })
+        $('#updateRanks').click(function( event ){
+            event.preventDefault();
+            var formData = new FormData();
+            $('.project').each(function(index, element){
+                console.log(element);
+                var nameParts = element.id.split("_container");
+                var rankElement = $("#" + nameParts[0] + "_rank");
+                formData.append(nameParts[0], rankElement[0].value || rankElement[0].placeholder);
+            });
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function( e ) {
+                if (req.readyState === 4){
+                    parent.location.reload();
+                }
+            };
+            req.open("POST", "/projects/update-ranks");
+            req.send(formData);
+        });
+    });
+</script>
+
 </html>

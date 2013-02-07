@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130203003720) do
+ActiveRecord::Schema.define(:version => 20130207012035) do
 
   create_table "media", :force => true do |t|
     t.string   "category"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20130203003720) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "project_id"
+    t.integer  "rank",       :default => 0, :null => false
   end
 
   create_table "projects", :force => true do |t|
@@ -26,6 +27,7 @@ ActiveRecord::Schema.define(:version => 20130203003720) do
     t.string   "footer"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "rank",       :default => 0, :null => false
   end
 
 end

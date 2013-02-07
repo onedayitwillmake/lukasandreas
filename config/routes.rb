@@ -1,7 +1,9 @@
 Lukasandreas::Application.routes.draw do
   resources :media
   match "media/new/:id" => "media#new";
+  match "media/update-ranks" => "media#updateRanks";
   match "projects/admin" => "projects#admin";
+  match "projects/update-ranks" => "projects#updateRanks";
   match "projects/admin/destroy:id" => "projects#destroy";
   resources :projects
 

@@ -1,4 +1,8 @@
 class MediaController < ApplicationController
+  before_filter :authenticate
+  #skip_before_filter :authenticate, :only => [:index, :destroy]
+
+
   require 'fileutils'
 
   # GET /media
@@ -9,6 +13,20 @@ class MediaController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @media }
+    end
+  end
+
+  def updateRanks
+    @project = Project.find(params[:project_id])
+    @allMedia = Medium.find_all_by_project_id(@project.id);
+
+    @allMedia.each { |media|
+      media.rank = params[ media.id.to_s() ].to_i();
+      media.save;
+    }
+
+    respond_to do |format|
+      format.html  { render :xml => @allMedia, :status => :created}
     end
   end
 

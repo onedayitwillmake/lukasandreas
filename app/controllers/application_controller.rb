@@ -9,4 +9,12 @@ class ApplicationController < ActionController::Base
       http.request(req)
     }
   end
+
+  protected
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "lukas" && password == "andreas"
+    end
+  end
+
 end
