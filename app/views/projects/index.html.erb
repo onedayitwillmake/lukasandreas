@@ -19,16 +19,16 @@
 <div id="wrap">
     <!-- Begin page content -->
     <div class="container">
-        <div class="span9">
+        <div class="mediaContainer row" style="padding-bottom:10px">
             <img src="/images/hero.jpg" />
         </div>
         <div class="container">
         <% @projects.each do |project| %>
-                <div class="mediaContainer row span9" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_content">
+                <div class="mediaContainer row" id="<%= project.name.gsub(/[^0-9a-z]/i, '') %>_content">
                 </div>
             <% allMedia= Medium.find_all_by_project_id(project.id) %>
             <% allMedia.each do |media| %>
-                <div class="mediaContainer row span9">
+                <div class="mediaContainer row">
                     <% if media.category == "image" %>
                         <img src="/<%= media.url %>" />
                     <% else %>
