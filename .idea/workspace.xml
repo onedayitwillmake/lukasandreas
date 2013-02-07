@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2294fb4b-3597-41a0-9915-49c6713e8fd6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/main.less" afterPath="$PROJECT_DIR$/public/stylesheets/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lukasandreas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +16,7 @@
     <file path="/README" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1359757696391" ignored="false" />
     <file path="/media.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1359758572128" ignored="false" />
     <file path="/new.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1359780359946" ignored="false" />
-    <file path="/index.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360013731719" ignored="false" />
+    <file path="/index.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360208992860" ignored="false" />
     <file path="/styles.less" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360205363309" ignored="false" />
     <file path="/routes.rb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360206093020" ignored="false" />
     <file path="/application.rb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360013353591" ignored="false" />
@@ -39,7 +39,6 @@
     <file path="/Constants.js" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360012692717" ignored="false" />
     <file path="$PROJECT_DIR$/../OGILVY/Blackrock/projects/GlobalAllocationFundChart/src/html/css/styles.less" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360028895204" ignored="false" />
     <file path="/20130207011433_change_default_for_media_rank.rb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360199813502" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360208616939" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +150,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="109" selection-start="2212" selection-end="2261" vertical-scroll-proportion="-0.625">
+            <state line="47" column="42" selection-start="2188" selection-end="2200" vertical-scroll-proportion="-15.666667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/main.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="42" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.4840336">
               <folding />
             </state>
           </provider>
@@ -166,10 +174,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="media_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/media_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="48" selection-start="350" selection-end="350" vertical-scroll-proportion="0.12605043">
+            <state line="36" column="140" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,15 +187,6 @@
         <entry file="file://$PROJECT_DIR$/public/stylesheets/styles.less">
           <provider selected="true" editor-type-id="text-editor">
             <state line="44" column="35" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="271" selection-end="286" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,7 +213,6 @@
         <option value="$PROJECT_DIR$/public/javascripts/thirdparty/jquery-latest.js" />
         <option value="$PROJECT_DIR$/public/javascripts/thirdparty/tween.js" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/main.less" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130207005953_add_rank_to_media.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130207011433_change_default_for_media_rank.rb" />
@@ -227,6 +225,7 @@
         <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/projects/index.html.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/main.less" />
       </list>
     </option>
   </component>
@@ -860,13 +859,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/styles.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="35" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/media/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -958,16 +950,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/media_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="109" selection-start="2212" selection-end="2261" vertical-scroll-proportion="-0.625">
+        <state line="36" column="140" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/media_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="350" selection-end="350" vertical-scroll-proportion="0.12605043">
+        <state line="47" column="42" selection-start="2188" selection-end="2200" vertical-scroll-proportion="-15.666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="42" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.4840336">
           <folding />
         </state>
       </provider>
