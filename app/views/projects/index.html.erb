@@ -33,7 +33,7 @@
                         <img src="/<%= media.url %>" />
                     <% else %>
                         <%
-                           urlString = "http://vimeo.com/api/oembed.json?url=" << media.url << "&width=700"
+                           urlString = "http://vimeo.com/api/oembed.json?url=" << media.url << "&width=600"
                            url = URI.parse(urlString)
                            req = Net::HTTP::Get.new(urlString)
                            res = Net::HTTP.start(url.host, url.port) {|http|
@@ -58,7 +58,7 @@
 </div>
 <div id="footer">
     <div class="container">
-        <p class="muted credit">&copy; Lukas Lund & Andreas Hoff 2012.</p>
+        <p class="muted credit">&copy; Lukas Lund & Andreas Hoff <%= Time.now.year %>.</p>
     </div>
 </div>
 <script type="text/javascript">

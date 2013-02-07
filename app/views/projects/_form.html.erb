@@ -43,7 +43,7 @@
                     <img src="/<%= media.url %>" width="100px" />
                 <% else %>
                     <%
-                       urlString = "http://vimeo.com/api/oembed.json?url=" << media.url << "&width=700"
+                       urlString = "http://vimeo.com/api/oembed.json?url=" << media.url << "&width=600"
                        url = URI.parse(urlString)
                        req = Net::HTTP::Get.new(urlString)
                        res = Net::HTTP.start(url.host, url.port) {|http|
