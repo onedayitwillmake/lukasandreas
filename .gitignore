@@ -4,4 +4,6 @@ log/*.log
 tmp/
 .DS_Store
 config/dev_database.yml
+config/database.yml
 public/content/*
+
