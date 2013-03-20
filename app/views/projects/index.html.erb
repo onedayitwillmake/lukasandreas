@@ -28,10 +28,12 @@
                 </div>
             <% allMedia= Medium.find_all_by_project_id(project.id) %>
             <% allMedia.each do |media| %>
-                <div class="mediaContainer row">
+
                     <% if media.category == "image" %>
+                  <div class="mediaContainer row">
                         <img src="/<%= media.url %>" />
                     <% else %>
+                  <div class="mediaContainer row videoContainer">
                         <%
                            urlString = "http://vimeo.com/api/oembed.json?url=" << media.url << "&width=600"
                            url = URI.parse(urlString)
@@ -44,11 +46,17 @@
                         %>
                         <%= raw(json['html']) %>
                     <% end %>
-                    <div class="mediaCaption row span9">
-                      <%= media.inspect %>
-                    </div>
+
+                    <% unless media.caption.empty? %>
+                      <div class="mediaCaption row span9">
+                          <%= media.caption %>
+                      </div>
+                    <% end %>
                 </div>
             <% end %>
+              <div class="projectFooter row">
+                  <%= project.footer %>
+              </div>
         <% end %>
         </div>
     </div>
