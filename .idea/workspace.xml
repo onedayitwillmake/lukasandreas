@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2294fb4b-3597-41a0-9915-49c6713e8fd6" name="Default" comment="Centered navigation">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -13,7 +12,7 @@
     <file path="/_form.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360203289139" ignored="false" />
     <file path="/media_controller.rb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360203190908" ignored="false" />
     <file path="/fragment.rb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360203231864" ignored="false" />
-    <file path="/Dummy.txt" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1361404756720" ignored="false" />
+    <file path="/Dummy.txt" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1363816748902" ignored="false" />
     <file path="/README" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1359757696391" ignored="false" />
     <file path="/media.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1359758572128" ignored="false" />
     <file path="/new.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1359780359946" ignored="false" />
@@ -103,19 +102,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/admin.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="95" selection-start="735" selection-end="735" vertical-scroll-proportion="-7.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/media/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="33" selection-start="2066" selection-end="2073" vertical-scroll-proportion="-14.625">
+            <state line="52" column="30" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.39553753">
               <folding />
             </state>
           </provider>
@@ -130,37 +120,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/media/index.html.erb">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/projects/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="8" column="36" selection-start="284" selection-end="284" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/media/show.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/media/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/media/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="37" selection-start="735" selection-end="742" vertical-scroll-proportion="-12.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="30" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.70621467">
+            <state line="55" column="33" selection-start="2066" selection-end="2073" vertical-scroll-proportion="-14.25">
               <folding />
             </state>
           </provider>
@@ -178,7 +150,7 @@
       <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="23" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0">
+            <state line="9" column="85" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -211,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/thirdparty/tween.js" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130207005953_add_rank_to_media.rb" />
@@ -226,6 +197,7 @@
         <option value="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/main.less" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/views/media/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/projects/index.html.erb" />
       </list>
     </option>
@@ -268,6 +240,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -414,9 +389,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,119 +417,6 @@
       <recent name="$PROJECT_DIR$/public/stylesheets" />
       <recent name="$PROJECT_DIR$/public/javascripts" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/config/database.yml</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Rails.Development: lukasandreas">
     <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
@@ -797,7 +656,7 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs>
-        <env name="RUBYLIB" value="/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib" />
+        <env name="RUBYLIB" value="/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:/Library/Ruby/Gems/1.8/gems/linecache-0.46/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-base-0.10.5.rc1/lib:$USER_HOME$/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-base-0.10.5.jb2/lib:$USER_HOME$/.rvm/gems/ruby-1.8.7-p352/gems/ruby-debug-ide-0.4.17.beta14/lib" />
       </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
@@ -910,26 +769,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23119469" sideWeight="0.4877601" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39845476" sideWeight="0.85434514" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964602" sideWeight="0.500612" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39845476" sideWeight="0.8470012" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39845476" sideWeight="0.14871481" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964602" sideWeight="0.49510404" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33016628" sideWeight="0.75340766" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.49265605" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25642595" sideWeight="0.28318584" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2625459" sideWeight="0.22075056" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25642595" sideWeight="0.37942478" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2625459" sideWeight="0.37306842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3064133" sideWeight="0.55886" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33016628" sideWeight="0.75340766" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1000,7 +859,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="43" />
+      <option name="time" value="45" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1018,44 +877,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="49" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="31" column="49" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/media_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="140" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="36" column="140" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="33" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/styles.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="35" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="23" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1067,18 +906,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/admin.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="95" selection-start="735" selection-end="735" vertical-scroll-proportion="-7.875">
+        <state line="9" column="85" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/media/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/media/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="33" selection-start="2066" selection-end="2073" vertical-scroll-proportion="-14.625">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/admin.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="95" selection-start="735" selection-end="735" vertical-scroll-proportion="0.34935305" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/media/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/media/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="67" selection-start="717" selection-end="769" vertical-scroll-proportion="0.54151624" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/media/edit.html.erb">
@@ -1088,30 +940,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/media/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/projects/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+        <state line="8" column="36" selection-start="284" selection-end="284" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/media/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/media/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/media/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="37" selection-start="735" selection-end="742" vertical-scroll-proportion="-12.5">
+        <state line="55" column="33" selection-start="2066" selection-end="2073" vertical-scroll-proportion="-14.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="30" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.70621467">
+        <state line="52" column="30" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.39553753">
           <folding />
         </state>
       </provider>
