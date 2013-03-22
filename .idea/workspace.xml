@@ -16,7 +16,7 @@
     <file path="/README" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1359757696391" ignored="false" />
     <file path="/media.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1359758572128" ignored="false" />
     <file path="/new.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1359780359946" ignored="false" />
-    <file path="/index.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1363983298236" ignored="false" />
+    <file path="/index.html.erb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1363984015693" ignored="false" />
     <file path="/styles.less" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360205363309" ignored="false" />
     <file path="/routes.rb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360206093020" ignored="false" />
     <file path="/application.rb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360013353591" ignored="false" />
@@ -39,7 +39,7 @@
     <file path="/Constants.js" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360012692717" ignored="false" />
     <file path="$PROJECT_DIR$/../OGILVY/Blackrock/projects/GlobalAllocationFundChart/src/html/css/styles.less" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360028895204" ignored="false" />
     <file path="/20130207011433_change_default_for_media_rank.rb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1360199813502" ignored="false" />
-    <file path="$USER_HOME$/SVN/GlobalAllocationFund/trunk/src/html/.idea/workspace.xml" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1363983606468" ignored="false" />
+    <file path="$USER_HOME$/SVN/GlobalAllocationFund/trunk/src/html/.idea/workspace.xml" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1363984328986" ignored="false" />
     <file path="$PROJECT_DIR$/db/schema.rb" changelist="2294fb4b-3597-41a0-9915-49c6713e8fd6" time="1363983284750" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +107,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="30" selection-start="2418" selection-end="2435" vertical-scroll-proportion="-16.25">
+            <state line="34" column="16" selection-start="1507" selection-end="1507" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -116,7 +116,7 @@
       <file leaf-file-name="main.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="4" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.6551724">
+            <state line="61" column="51" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.33189654">
               <folding />
             </state>
           </provider>
@@ -167,7 +167,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="2547" />
+    <option name="y" value="-472" />
     <option name="width" value="1680" />
     <option name="height" value="1024" />
   </component>
@@ -226,56 +227,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -305,10 +256,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -321,42 +268,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lukasandreas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -752,7 +663,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
+    <frame x="2547" y="-472" width="1680" height="1024" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23119469" sideWeight="0.4877601" order="7" side_tool="false" content_ui="tabs" />
@@ -926,14 +837,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="30" selection-start="2418" selection-end="2435" vertical-scroll-proportion="-16.25">
+        <state line="34" column="16" selection-start="1507" selection-end="1507" vertical-scroll-proportion="-13.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="4" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.6551724">
+        <state line="61" column="51" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.33189654">
           <folding />
         </state>
       </provider>
