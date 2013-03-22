@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130207012035) do
+ActiveRecord::Schema.define(:version => 20130322200617) do
 
   create_table "media", :force => true do |t|
     t.string   "category"
@@ -24,10 +24,10 @@ ActiveRecord::Schema.define(:version => 20130207012035) do
 
   create_table "projects", :force => true do |t|
     t.string   "name"
-    t.string   "footer"
+    t.string   "footer",     :limit => 16384
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "rank",       :default => 0, :null => false
+    t.integer  "rank",                        :default => 0, :null => false
   end
 
 end
